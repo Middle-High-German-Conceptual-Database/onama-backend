@@ -1,0 +1,1517 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://onama.sbg.ac.at/ontology#"
+     xml:base="http://onama.sbg.ac.at/ontology"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:onama="http://onama.sbg.ac.at/ontology#"
+     xmlns:dcterms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://onama.sbg.ac.at/ontology">
+        <owl:imports rdf:resource="http://erlangen-crm.org/current/"/>
+        <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <dcterms:abstract xml:lang="de">ONAMA – Ontologie der Narrative des Mittelalters – ermöglicht den systematischen Vergleich von Strukturen und Bausteinen von Narrativen in mittelalterlicher Literatur und Kunst. Diese Ontologie bietet ein Modell für eine medienübergreifende Beschreibung von Handlungen, Akteuren, Schauplätzen und zeitlichen Strukturen. Neben den konstituierenden Grundelementen transmedialer ‚Erzählkerne‘ erfassen diese Beschreibungen die jeweiligen textlichen und bildlichen Umsetzungen im Detail und gehen damit über die reine ‚Handlung‘ eines Erzähl- oder Bilderzyklus hinaus. ONAMA erlaubt es, Muster und Eigenheiten in der Konstruktion von Erzählungen zu identifizieren, die dann auf ihre zugrundeliegenden Ursachen und Funktionen untersucht werden können. Mit ONAMA können Bild- und Textquellen so annotiert werden, dass die generierten Daten Aufschluss über die Entstehung und Weitergabe von Erzählkernen, Figurenkonstellationen, Handlungsmustern etc. im jeweiligen Medium und in medienübergreifenden Zusammenhängen geben.</dcterms:abstract>
+        <dcterms:abstract xml:lang="en">ONAMA – Ontology of Narratives of the Middle Ages – enables the systematic comparison of the structures and building blocks of many narratives in medieval literature and images. This ontology provides a model for a cross-media description of actions, actors, settings and temporal structures. In addition to the constituting basic elements of transmedial “narrative nuclei”, these descriptions record the respective textual and pictorial realizations in detail. They thus go beyond the “plot” of a story or picture cycle. ONAMA allows to identify patterns and peculiarities in the construction of narratives, which can then be examined for their underlying causes and functions. ONAMA enables to annotate image and text sources in a way that the generated data provide information about the emergence and transmission of narrative nuclei, figure constellations, patterns of actions, etc. in the respective medium and in cross-media synopses.</dcterms:abstract>
+        <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-08-01</dcterms:created>
+        <dcterms:creator>Hinkelmanns, Peter</dcterms:creator>
+        <dcterms:creator>Landkammer, Miriam</dcterms:creator>
+        <dcterms:creator>Nicka, Isabella</dcterms:creator>
+        <dcterms:creator>Schwembacher, Manuel</dcterms:creator>
+        <dcterms:creator>Zeppezauer-Wachauer, Katharina</dcterms:creator>
+        <dcterms:description xml:lang="de">Das Projekt ONAMA („Ontologie der Narrative des Mittelalters“) beschäftigt sich mit der Erstellung eines computergestützten Systems von Relationen mittelalterlicher narratologischer Entitäten in Texten und Bildern. Das interdisziplinäre ‚Joint Venture‘ ONAMA basiert auf den umfangreichen Korpora zweier Langzeitprojekte der Universität Salzburg, der Mittelhochdeutschen Begriffsdatenbank (MHDBDB) sowie der Bilddatenbank REALonline des Instituts für Realienkunde des Mittelalters und der frühen Neuzeit (IMAREAL). Die beiden Datenbanken bieten einen umfassenden Zugriff auf die Bild - und Textwelt des Mittelalters: Bei REALonline können Benutzer/innen unter anderem ein Bildmotiv auswählen, um Zugang zu einer Vielzahl von Realisierungen dieses Themas in Kunstwerken und Artefakten zu erhalten. Über eine onomasiologische Begriffsontologie ermöglicht die MHDBDB den Zugriff auf Motive und Themen und liefert dazu die zugrunde liegenden Textstellen aus verschiedenen Quellen.</dcterms:description>
+        <dcterms:description xml:lang="en">The project “ONAMA” (“Ontology of Narratives of the Middle Ages”) deals with the creation of a computer-based system of relations between medieval narratological entities in texts and images. The interdisciplinary ‘joint venture’ ONAMA is based on the extensive corpora of two long-term projects of the University of Salzburg, the Middle High German Conceptual Database (MHDBDB) and the image database REALonline of the Institute for Medieval and Early Modern Material Culture (IMAREAL). The two databases provide a sophisticated access to the medieval fine arts and literature: At REALonline a user is, among other things, able to choose a pictorial subject, to get access to a wide range of realisations of the motif appearing in works of art and on artefacts. The MHDBDB provides a comprehensive access to Middle High German literature and its vocabulary. Through its conceptual ontology it facilitates searches for motifs and themes and yields the respective text passages where they occur.</dcterms:description>
+        <dcterms:license>CC BY-SA 4.0</dcterms:license>
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-10-05</dcterms:modified>
+        <dcterms:title xml:lang="de">Ontologie der Narrative des Mittelalters</dcterms:title>
+        <dcterms:title xml:lang="en">Ontology of Narratives of the Middle Ages</dcterms:title>
+        <vann:preferredNamespacePrefix>onama</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://onama.sbg.ac.at/ontology#</vann:preferredNamespaceUri>
+        <owl:priorVersion>http://onama.sbg.ac.at/1.4</owl:priorVersion>
+        <owl:versionIRI>http://onama.sbg.ac.at/ontology/1.5</owl:versionIRI>
+        <owl:versionInfo>1.5</owl:versionInfo>
+        <foaf:logo>http://onama.sbg.ac.at/wp-content/uploads/2019/10/ONAMA_logo_mediawiki.jpg</foaf:logo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#hasCidocEquivalent -->
+
+    <owl:AnnotationProperty rdf:about="http://onama.sbg.ac.at/ontology#hasCidocEquivalent">
+        <rdfs:label xml:lang="en">has Cidoc Equivalent</rdfs:label>
+        <rdfs:label xml:lang="de">hat Cidoc Äquivalent</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#hasCidocSubclass -->
+
+    <owl:AnnotationProperty rdf:about="http://onama.sbg.ac.at/ontology#hasCidocSubclass">
+        <rdfs:label xml:lang="en">has Cidoc Subclass</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#hasCidocSuperclass -->
+
+    <owl:AnnotationProperty rdf:about="http://onama.sbg.ac.at/ontology#hasCidocSuperclass">
+        <rdfs:label xml:lang="en">has Cidoc Superclass</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description">
+        <rdfs:label xml:lang="en">description</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/abstract -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#type -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type">
+        <rdfs:label xml:lang="en">type</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdfs:label xml:lang="en">label</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionIRI -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionIRI"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/logo -->
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/logo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#broader -->
+
+    <owl:ObjectProperty rdf:about="http://onama.sbg.ac.at/ontology#broader">
+        <rdfs:subPropertyOf rdf:resource="http://onama.sbg.ac.at/ontology#broaderTransitive"/>
+        <owl:inverseOf rdf:resource="http://onama.sbg.ac.at/ontology#narrower"/>
+        <rdfs:domain rdf:resource="http://onama.sbg.ac.at/ontology#Concept"/>
+        <rdfs:range rdf:resource="http://onama.sbg.ac.at/ontology#Concept"/>
+        <dc:description xml:lang="de">Die Kante &quot;umfassender&quot; verweist von einem Konzept eines Narraivs auf das unmittelbar übergeordnete Konzept und zeigt damit an, dass ein Narrativ Teil eines anderen Narrativs ist.</dc:description>
+        <dc:description xml:lang="en">The property &quot;broader&quot; relates a narrative concept to the immediately superordinate concept, indicating that a narrative is part of another narrative.</dc:description>
+        <rdfs:label xml:lang="en">broader</rdfs:label>
+        <rdfs:label xml:lang="de">umfassender</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#broaderTransitive -->
+
+    <owl:ObjectProperty rdf:about="http://onama.sbg.ac.at/ontology#broaderTransitive">
+        <rdfs:subPropertyOf rdf:resource="http://onama.sbg.ac.at/ontology#isRelatedTo"/>
+        <owl:inverseOf rdf:resource="http://onama.sbg.ac.at/ontology#narrowerTransitive"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://onama.sbg.ac.at/ontology#Concept"/>
+        <rdfs:range rdf:resource="http://onama.sbg.ac.at/ontology#Concept"/>
+        <dc:description xml:lang="de">Diese Kante verbindet ein Konzept eines Narrativs mit sämtlichen übergeordneten Konzepten.</dc:description>
+        <dc:description xml:lang="en">This property relates a narrative concept to all the hierarchically superordinated narrative concepts.</dc:description>
+        <rdfs:label xml:lang="en">broader transitive</rdfs:label>
+        <rdfs:label xml:lang="de">transitiv umfassender</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#firstInCollection -->
+
+    <owl:ObjectProperty rdf:about="http://onama.sbg.ac.at/ontology#firstInCollection">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://onama.sbg.ac.at/ontology#Collection"/>
+        <rdfs:range rdf:resource="http://onama.sbg.ac.at/ontology#Realisation"/>
+        <dc:description xml:lang="de">Diese Kante verbindet eine Sammlung mit dem ersten Narrativ (Realisierung) in der Sammlung.</dc:description>
+        <dc:description xml:lang="en">This property relates a collection with the first narrative (realisation) in the collection.</dc:description>
+        <rdfs:label xml:lang="de">erstes Element in einer Sammlung</rdfs:label>
+        <rdfs:label xml:lang="en">first in collection</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#hasAction -->
+
+    <owl:ObjectProperty rdf:about="http://onama.sbg.ac.at/ontology#hasAction">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://onama.sbg.ac.at/ontology#Narrative"/>
+        <rdfs:range rdf:resource="http://onama.sbg.ac.at/ontology#Action"/>
+        <dc:description xml:lang="de">Diese Kante verbindet ein Narrativ mit der Handlung, die im Narrativ stattfindet.</dc:description>
+        <dc:description xml:lang="en">This property relates a narrative to the action taking place in the narrative.</dc:description>
+        <rdfs:label xml:lang="en">has action</rdfs:label>
+        <rdfs:label xml:lang="de">hat Handlung</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#hasActor -->
+
+    <owl:ObjectProperty rdf:about="http://onama.sbg.ac.at/ontology#hasActor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://onama.sbg.ac.at/ontology#SemanticRole"/>
+        <rdfs:range rdf:resource="http://onama.sbg.ac.at/ontology#Actor"/>
+        <dc:description xml:lang="de">Diese Kante verbindet eine semantische Rolle mit dem Akteur, der diese Rolle besetzt.</dc:description>
+        <dc:description xml:lang="en">This property relates a semantic role to the actor who holds this role.</dc:description>
+        <rdfs:label xml:lang="en">has actor</rdfs:label>
+        <rdfs:label xml:lang="de">hat Akteur</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#hasEntityFunction -->
+
+    <owl:ObjectProperty rdf:about="http://onama.sbg.ac.at/ontology#hasEntityFunction">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="http://onama.sbg.ac.at/ontology#EntityFunction"/>
+        <dc:description xml:lang="de">Diese Kante verbindet einen Akteur, ein Ding oder eine Semantische Rolle mit einer Entitätsfunktion. Bitte verwenden Sie eine der beiden Subproperties.</dc:description>
+        <dc:description xml:lang="en">This property relates an actor or a thing to an Entity Function. Please use one of the two subproperties.</dc:description>
+        <rdfs:label xml:lang="en">has Entity Function</rdfs:label>
+        <rdfs:label xml:lang="de">hat Entitätsfunktion</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#hasGNDEquivalent -->
+
+    <owl:ObjectProperty rdf:about="http://onama.sbg.ac.at/ontology#hasGNDEquivalent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://onama.sbg.ac.at/ontology#Collection"/>
+                    <rdf:Description rdf:about="http://onama.sbg.ac.at/ontology#Narrative"/>
+                    <rdf:Description rdf:about="http://onama.sbg.ac.at/ontology#PersistentItem"/>
+                    <rdf:Description rdf:about="http://onama.sbg.ac.at/ontology#Place"/>
+                    <rdf:Description rdf:about="http://onama.sbg.ac.at/ontology#TemporalEntity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <dc:description xml:lang="de">Diese Eigenschaft/dieses Narrativ hat eine GND Entsprechung.</dc:description>
+        <dc:description xml:lang="en">This property/narrative has a GND equivalent.</dc:description>
+        <rdfs:label xml:lang="en">has GND equivalent</rdfs:label>
+        <rdfs:label xml:lang="de">hat GND Äquivalent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#hasGeneralEntityFunction -->
+
+    <owl:ObjectProperty rdf:about="http://onama.sbg.ac.at/ontology#hasGeneralEntityFunction">
+        <rdfs:subPropertyOf rdf:resource="http://onama.sbg.ac.at/ontology#hasEntityFunction"/>
+        <rdfs:domain rdf:resource="http://onama.sbg.ac.at/ontology#PersistentItem"/>
+        <rdfs:range rdf:resource="http://onama.sbg.ac.at/ontology#EntityFunction"/>
+        <dc:description xml:lang="de">Diese Kante verbindet einen Akteur oder ein Ding mit einer allgemein zutreffenden Entitätsfunktion.</dc:description>
+        <dc:description xml:lang="en">This property relates an actor or a thing to a generally applicable entity function.</dc:description>
+        <rdfs:label xml:lang="en">has general entity function</rdfs:label>
+        <rdfs:label xml:lang="de">hat allgemeine Entitätsfunktion</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#hasIconClassEquivalent -->
+
+    <owl:ObjectProperty rdf:about="http://onama.sbg.ac.at/ontology#hasIconClassEquivalent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+        <dc:description xml:lang="de">Dieses Narrativ hat eine IconClass Entsprechung.</dc:description>
+        <dc:description xml:lang="en">This narrative has an IconClass equivalent.</dc:description>
+        <rdfs:label xml:lang="en">has IconClass equivalent</rdfs:label>
+        <rdfs:label xml:lang="de">hat IconClass Äquivalent</rdfs:label>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://onama.sbg.ac.at/ontology#Narrative"/>
+                    <rdf:Description rdf:about="http://onama.sbg.ac.at/ontology#PersistentItem"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#hasNarrative -->
+
+    <owl:ObjectProperty rdf:about="http://onama.sbg.ac.at/ontology#hasNarrative">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://onama.sbg.ac.at/ontology#SemanticRole"/>
+        <rdfs:range rdf:resource="http://onama.sbg.ac.at/ontology#Narrative"/>
+        <dc:description xml:lang="de">Diese Kante verbindet eine semantische Rolle mit einem Narrativ.</dc:description>
+        <dc:description xml:lang="en">This property relates a semantic role to a narrative.</dc:description>
+        <rdfs:label xml:lang="en">has narrative</rdfs:label>
+        <rdfs:label xml:lang="de">hat Narrativ</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#hasPlace -->
+
+    <owl:ObjectProperty rdf:about="http://onama.sbg.ac.at/ontology#hasPlace">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://onama.sbg.ac.at/ontology#SemanticRole"/>
+        <rdfs:range rdf:resource="http://onama.sbg.ac.at/ontology#Place"/>
+        <dc:description xml:lang="de">Diese Kante verbindet eine semantische Rolle, meistens vom Typ &quot;Lokalisierung&quot;, mit einer Ortsangabe.</dc:description>
+        <dc:description xml:lang="en">This edge connects a semantic role, usually of the &quot;localisation&quot; type, with a place indication.</dc:description>
+        <rdfs:label xml:lang="en">has place</rdfs:label>
+        <rdfs:label xml:lang="de">hat Ort</rdfs:label>
+    </owl:ObjectProperty>
+
+
+    
+    <!-- http://onama.sbg.ac.at/ontology#hasRelatedIconClassEntry -->
+
+    <owl:ObjectProperty rdf:about="http://onama.sbg.ac.at/ontology#hasRelatedIconClassEntry">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://onama.sbg.ac.at/ontology#Narrative"/>
+                    <rdf:Description rdf:about="http://onama.sbg.ac.at/ontology#PersistentItem"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#hasRelatedWikiDataEntry -->
+
+    <owl:ObjectProperty rdf:about="http://onama.sbg.ac.at/ontology#hasRelatedWikiDataEntry">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://onama.sbg.ac.at/ontology#Collection"/>
+                    <rdf:Description rdf:about="http://onama.sbg.ac.at/ontology#Narrative"/>
+                    <rdf:Description rdf:about="http://onama.sbg.ac.at/ontology#PersistentItem"/>
+                    <rdf:Description rdf:about="http://onama.sbg.ac.at/ontology#Place"/>
+                    <rdf:Description rdf:about="http://onama.sbg.ac.at/ontology#TemporalEntity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#relatedMatch"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#hasSemanticRole -->
+
+    <owl:ObjectProperty rdf:about="http://onama.sbg.ac.at/ontology#hasSemanticRole">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://onama.sbg.ac.at/ontology#Narrative"/>
+        <rdfs:range rdf:resource="http://onama.sbg.ac.at/ontology#SemanticRole"/>
+        <dc:description xml:lang="en">Basic relation between a narrative and its particular components.</dc:description>
+        <dc:description xml:lang="de">Die grundlegende Beziehung zwischen einem Narrativ und dessen einzelnen &quot;Bausteinen&quot;.</dc:description>
+        <rdfs:label xml:lang="en">has semantic role</rdfs:label>
+        <rdfs:label xml:lang="de">hat semantische Rolle</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#hasSupplementaryConcept -->
+
+    <owl:ObjectProperty rdf:about="http://onama.sbg.ac.at/ontology#hasSupplementaryConcept">
+        <rdfs:subPropertyOf rdf:resource="http://onama.sbg.ac.at/ontology#isRelatedTo"/>
+        <rdfs:domain rdf:resource="http://onama.sbg.ac.at/ontology#Concept"/>
+        <rdfs:range rdf:resource="http://onama.sbg.ac.at/ontology#Concept"/>
+        <dc:description xml:lang="de">Diese Kante verbindet ein Narrativ-Konzept mit einem ergänzenden Narrativ-Konzept. Ein ergänzendes Konzept ist ein Narrativ, das zusätzlich zur jeweiligen &quot;Haupthandlung&quot; geschildert wird.</dc:description>
+        <dc:description xml:lang="en">This property relates a narrative concept to a supplementary narrative concept. A supplementary concept is a narrative, which is presented in addition to the respective &quot;main action&quot;.</dc:description>
+        <rdfs:label xml:lang="en">has supplementary concept</rdfs:label>
+        <rdfs:label xml:lang="de">hat ergänzendes Konzept</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#hasTemporalEntity -->
+
+    <owl:ObjectProperty rdf:about="http://onama.sbg.ac.at/ontology#hasTemporalEntity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://onama.sbg.ac.at/ontology#SemanticRole"/>
+        <rdfs:range rdf:resource="http://onama.sbg.ac.at/ontology#TemporalEntity"/>
+        <dc:description xml:lang="de">Diese Kante verbindet eine semantische Rolle mit einer zeitlichen Entität, die diese Rolle besetzt.</dc:description>
+        <dc:description xml:lang="en">This property relates a semantic role to a temporal entity that holds this role.</dc:description>
+        <rdfs:label xml:lang="en">has temporal entity</rdfs:label>
+        <rdfs:label xml:lang="de">hat zeitliche Entität (Geschehendes)</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#hasTemporaryEntityFunction -->
+
+    <owl:ObjectProperty rdf:about="http://onama.sbg.ac.at/ontology#hasTemporaryEntityFunction">
+        <rdfs:subPropertyOf rdf:resource="http://onama.sbg.ac.at/ontology#hasEntityFunction"/>
+        <rdfs:domain rdf:resource="http://onama.sbg.ac.at/ontology#SemanticRole"/>
+        <rdfs:range rdf:resource="http://onama.sbg.ac.at/ontology#EntityFunction"/>
+        <dc:description xml:lang="de">Diese Kante verbindet einen Knoten vom Typ &quot;Semantische Rolle&quot; mit einer Entitätsfunktion. Die Funktion trifft also zeitweilig - für das Narrativ - auf den Rolleninhaber (Akteur oder Ding) zu.</dc:description>
+        <dc:description xml:lang="en">This property relates a node of type &quot;Semantic Role&quot; to an entity function. The function thus applies temporarily - for the narrative - to the actor or thing that holds the role.</dc:description>
+        <rdfs:label xml:lang="en">has temporary entity function</rdfs:label>
+        <rdfs:label xml:lang="de">hat zeitweilige Entitätsfunktion</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#hasTextPassage -->
+
+    <owl:ObjectProperty rdf:about="http://onama.sbg.ac.at/ontology#hasTextPassage">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://onama.sbg.ac.at/ontology#TextualRealisation"/>
+        <rdfs:range rdf:resource="http://onama.sbg.ac.at/ontology#TextPassage"/>
+        <dc:description xml:lang="de">Diese Eigenschaft verbindet ein textell realisiertes Narrativ mit dem spezifischen Textausschnitt, der das Narrativ schildert, in der MHDBDB.</dc:description>
+        <dc:description xml:lang="en">This property relates a narrative realised in a text to the specific section of text that describes the narrative in the MHDBDB.</dc:description>
+        <rdfs:label xml:lang="en">has text passage</rdfs:label>
+        <rdfs:label xml:lang="de">hat Textpassage</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#hasThing -->
+
+    <owl:ObjectProperty rdf:about="http://onama.sbg.ac.at/ontology#hasThing">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://onama.sbg.ac.at/ontology#SemanticRole"/>
+        <rdfs:range rdf:resource="http://onama.sbg.ac.at/ontology#Thing"/>
+        <dc:description xml:lang="de">Diese Kante verbindet eine sematische Rolle mit einem intellektuellen Produkt oder physischen Ding, das diese Rolle besetzt.</dc:description>
+        <dc:description xml:lang="en">This property relates a semantic role to an intellectual product or physical thing that holds this role.</dc:description>
+        <rdfs:label xml:lang="en">has thing</rdfs:label>
+        <rdfs:label xml:lang="de">hat Ding</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#hasVerb -->
+
+    <owl:ObjectProperty rdf:about="http://onama.sbg.ac.at/ontology#hasVerb">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://onama.sbg.ac.at/ontology#Action"/>
+        <rdfs:range rdf:resource="http://onama.sbg.ac.at/ontology#Verb"/>
+        <dc:description xml:lang="de">Diese Kante verbindet eine Handlung mit dem entsprechenden Verb.</dc:description>
+        <dc:description xml:lang="en">This property relates an action with the corresponding verb.</dc:description>
+        <rdfs:label xml:lang="en">has verb</rdfs:label>
+        <rdfs:label xml:lang="de">hat Verb</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#hasWikiDataEquivalent -->
+
+    <owl:ObjectProperty rdf:about="http://onama.sbg.ac.at/ontology#hasWikiDataEquivalent">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#sameAs"/>
+        <dc:description xml:lang="de">Dieses Narrativ/Charakter hat eine WikiData Entsprechung.</dc:description>
+        <dc:description xml:lang="en">This narrative/caracter has a WikiData equivalent.</dc:description>
+        <rdfs:label xml:lang="en">has WikiData equivalent</rdfs:label>
+        <rdfs:label xml:lang="de">hat WikiData Äquivalent</rdfs:label>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://onama.sbg.ac.at/ontology#Collection"/>
+                    <rdf:Description rdf:about="http://onama.sbg.ac.at/ontology#Narrative"/>
+                    <rdf:Description rdf:about="http://onama.sbg.ac.at/ontology#PersistentItem"/>
+                    <rdf:Description rdf:about="http://onama.sbg.ac.at/ontology#Place"/>
+                    <rdf:Description rdf:about="http://onama.sbg.ac.at/ontology#TemporalEntity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#isRealisedAsSupplementaryNarrativeBy -->
+
+    <owl:ObjectProperty rdf:about="http://onama.sbg.ac.at/ontology#isRealisedAsSupplementaryNarrativeBy">
+        <rdfs:subPropertyOf rdf:resource="http://onama.sbg.ac.at/ontology#isRealisedBy"/>
+        <owl:inverseOf rdf:resource="http://onama.sbg.ac.at/ontology#realisesAsSupplementaryNarrative"/>
+        <rdfs:domain rdf:resource="http://onama.sbg.ac.at/ontology#Concept"/>
+        <rdfs:range rdf:resource="http://onama.sbg.ac.at/ontology#Realisation"/>
+        <dc:description xml:lang="de">Diese Eigenschaft verbindet jene Konzepte, die eine &quot;Haupthandlung&quot; ergänzen, mit ihren Realisierungen.</dc:description>
+        <dc:description xml:lang="en">This property relates those concepts that are supplementary to a &quot;main plot&quot; to their realisations.</dc:description>
+        <rdfs:label xml:lang="en">is realised as supplementary narrative by</rdfs:label>
+        <rdfs:label xml:lang="de">ist realisiert als ergänzendes Narrativ durch</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#isRealisedBy -->
+
+    <owl:ObjectProperty rdf:about="http://onama.sbg.ac.at/ontology#isRealisedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://onama.sbg.ac.at/ontology#realises"/>
+        <rdfs:domain rdf:resource="http://onama.sbg.ac.at/ontology#Concept"/>
+        <rdfs:range rdf:resource="http://onama.sbg.ac.at/ontology#Realisation"/>
+        <dc:description xml:lang="de">Das Narrativ ist realisiert durch ein spezifisches Werk der Literatur oder der bildenden Kunst; diese Kante verbindet das Konzept eines Narrativs mit dessen Realisierung.</dc:description>
+        <dc:description xml:lang="en">The narrative is realized through a specific work of literature or the visual arts; this property relates the concept of a narrative to its realisation.</dc:description>
+        <rdfs:label xml:lang="en">is realised by</rdfs:label>
+        <rdfs:label xml:lang="de">ist realisiert durch</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#isRelatedTo -->
+
+    <owl:ObjectProperty rdf:about="http://onama.sbg.ac.at/ontology#isRelatedTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <dc:description xml:lang="de">Die grundlegende Kante, um eine Beziehung zwischen zwei Narrativen herzustellen.</dc:description>
+        <dc:description xml:lang="en">The basic property to state a relation between two narratives.</dc:description>
+        <rdfs:label xml:lang="en">is related to</rdfs:label>
+        <rdfs:label xml:lang="de">steht in Beziehung mit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#narrower -->
+
+    <owl:ObjectProperty rdf:about="http://onama.sbg.ac.at/ontology#narrower">
+        <rdfs:subPropertyOf rdf:resource="http://onama.sbg.ac.at/ontology#narrowerTransitive"/>
+        <rdfs:domain rdf:resource="http://onama.sbg.ac.at/ontology#Concept"/>
+        <rdfs:range rdf:resource="http://onama.sbg.ac.at/ontology#Concept"/>
+        <dc:description xml:lang="de">Diese Kante verbindet ein Narrativ-Konzept mit einem weiteren Narrativ-Konzept, das als Teil des ersten betrachtet werden kann.</dc:description>
+        <dc:description xml:lang="en">This property relates one narrative concept to another narrative concept that can be considered part of the first.</dc:description>
+        <rdfs:label xml:lang="de">enger</rdfs:label>
+        <rdfs:label xml:lang="en">narrower</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#narrowerTransitive -->
+
+    <owl:ObjectProperty rdf:about="http://onama.sbg.ac.at/ontology#narrowerTransitive">
+        <rdfs:subPropertyOf rdf:resource="http://onama.sbg.ac.at/ontology#isRelatedTo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://onama.sbg.ac.at/ontology#Concept"/>
+        <rdfs:range rdf:resource="http://onama.sbg.ac.at/ontology#Concept"/>
+        <dc:description xml:lang="de">Diese Kante verweist von einem Narrativ-Konzept auf sämtliche untergeordneten Narrativ-Konzepte.</dc:description>
+        <dc:description xml:lang="en">This property points from one narrative concept to all subordinate narrative concepts.</dc:description>
+        <rdfs:label xml:lang="en">narrower transitive</rdfs:label>
+        <rdfs:label xml:lang="de">transitiv enger</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#next -->
+
+    <owl:ObjectProperty rdf:about="http://onama.sbg.ac.at/ontology#next">
+        <rdfs:subPropertyOf rdf:resource="http://onama.sbg.ac.at/ontology#isRelatedTo"/>
+        <owl:inverseOf rdf:resource="http://onama.sbg.ac.at/ontology#previous"/>
+        <rdfs:domain rdf:resource="http://onama.sbg.ac.at/ontology#Realisation"/>
+        <rdfs:range rdf:resource="http://onama.sbg.ac.at/ontology#Realisation"/>
+        <dc:description xml:lang="de">Diese Kante verweist auf Realisierungsebene von einem Narrativ auf das nächste Narrativ.</dc:description>
+        <dc:description xml:lang="en">On the level of realisation, this property points from one narrative to the next narrative.</dc:description>
+        <rdfs:label xml:lang="en">next</rdfs:label>
+        <rdfs:label xml:lang="de">nächstes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#nextFabula -->
+
+    <owl:ObjectProperty rdf:about="http://onama.sbg.ac.at/ontology#nextFabula">
+        <rdfs:subPropertyOf rdf:resource="http://onama.sbg.ac.at/ontology#next"/>
+        <owl:inverseOf rdf:resource="http://onama.sbg.ac.at/ontology#previousFabula"/>
+        <rdfs:domain rdf:resource="http://onama.sbg.ac.at/ontology#Realisation"/>
+        <rdfs:range rdf:resource="http://onama.sbg.ac.at/ontology#Realisation"/>
+        <hasCidocEquivalent rdf:datatype="http://www.w3.org/2001/XMLSchema#string">www.cidoc-crm.org/html/5.0.4/cidoc-crm.html#P120</hasCidocEquivalent>
+        <dc:description xml:lang="de">Diese Kante verweist auf Realisierungsebene von einem Narrativ auf das nächste Narrativ auf dem Fabula-Pfad.</dc:description>
+        <dc:description xml:lang="en">On the level of realisation, this property points from one narrative to the next narrative on the fabula path.</dc:description>
+        <rdfs:label xml:lang="en">next fabula</rdfs:label>
+        <rdfs:label xml:lang="de">nächste Fabula</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#nextSyuzhet -->
+
+    <owl:ObjectProperty rdf:about="http://onama.sbg.ac.at/ontology#nextSyuzhet">
+        <rdfs:subPropertyOf rdf:resource="http://onama.sbg.ac.at/ontology#next"/>
+        <owl:inverseOf rdf:resource="http://onama.sbg.ac.at/ontology#previousSyuzhet"/>
+        <rdfs:domain rdf:resource="http://onama.sbg.ac.at/ontology#Realisation"/>
+        <rdfs:range rdf:resource="http://onama.sbg.ac.at/ontology#Realisation"/>
+        <dc:description xml:lang="de">Diese Kante verweist auf Realisierungsebene von einem Narrativ auf das nächste Narrativ auf dem Syuzhet-Pfad.</dc:description>
+        <dc:description xml:lang="en">On the level of realisation, this property points from one narrative to the next narrative on the syuzhet path.</dc:description>
+        <rdfs:label xml:lang="en">next syuzhet</rdfs:label>
+        <rdfs:label xml:lang="de">nächstes Syuzhet</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#occursSimultaneously -->
+
+    <owl:ObjectProperty rdf:about="http://onama.sbg.ac.at/ontology#occursSimultaneously">
+        <rdfs:subPropertyOf rdf:resource="http://onama.sbg.ac.at/ontology#isRelatedTo"/>
+        <rdfs:domain rdf:resource="http://onama.sbg.ac.at/ontology#Realisation"/>
+        <rdfs:range rdf:resource="http://onama.sbg.ac.at/ontology#Realisation"/>
+        <dc:description xml:lang="de">Diese Kante verbindet auf Realisierungsebene ein Narrativ mit einem anderen Narrativ, das gleichzeitig stattfindet.</dc:description>
+        <dc:description xml:lang="en">On the level of realisation, this property relates one narrative to another narrative that takes place simultaneously.</dc:description>
+        <rdfs:label xml:lang="en">occurs simultaneously</rdfs:label>
+        <rdfs:label xml:lang="de">passiert gleichzeitig</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#partOfCollection -->
+
+    <owl:ObjectProperty rdf:about="http://onama.sbg.ac.at/ontology#partOfCollection">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://onama.sbg.ac.at/ontology#Realisation"/>
+        <rdfs:range rdf:resource="http://onama.sbg.ac.at/ontology#Collection"/>
+        <dc:description xml:lang="de">Diese Kante verweist von einer Narrativ-Realisierung auf die Sammlung, aus der das Narrativ stammt.</dc:description>
+        <dc:description xml:lang="en">This property points from a narrative realisation to the collection from which the narrative originates.</dc:description>
+        <rdfs:label xml:lang="de">Teil einer Sammlung</rdfs:label>
+        <rdfs:label xml:lang="en">part of collection</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#previous -->
+
+    <owl:ObjectProperty rdf:about="http://onama.sbg.ac.at/ontology#previous">
+        <rdfs:subPropertyOf rdf:resource="http://onama.sbg.ac.at/ontology#isRelatedTo"/>
+        <rdfs:domain rdf:resource="http://onama.sbg.ac.at/ontology#Realisation"/>
+        <rdfs:range rdf:resource="http://onama.sbg.ac.at/ontology#Realisation"/>
+        <dc:description xml:lang="de">Diese Kante verweist auf Realisierungsebene von einem Narrativ auf das vorhergehende Narrativ.</dc:description>
+        <dc:description xml:lang="en">On the level of realisation, this property points from one narrative to the previous narrative.</dc:description>
+        <rdfs:label xml:lang="en">previous</rdfs:label>
+        <rdfs:label xml:lang="de">vorhergehend</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#previousFabula -->
+
+    <owl:ObjectProperty rdf:about="http://onama.sbg.ac.at/ontology#previousFabula">
+        <rdfs:subPropertyOf rdf:resource="http://onama.sbg.ac.at/ontology#previous"/>
+        <rdfs:domain rdf:resource="http://onama.sbg.ac.at/ontology#Realisation"/>
+        <rdfs:range rdf:resource="http://onama.sbg.ac.at/ontology#Realisation"/>
+        <hasCidocEquivalent rdf:resource="http://www.cidoc-crm.org/html/5.0.4/cidoc-crm.html#P120i"/>
+        <dc:description xml:lang="de">Diese Kante verweist auf Realisierungsebene von einem Narrativ auf das vorhergehende Narrativ auf dem Fabula-Pfad.</dc:description>
+        <dc:description xml:lang="en">On the level of realisation, this property points from one narrative to the previous narrative on the fabula path.</dc:description>
+        <rdfs:label xml:lang="en">previous fabula</rdfs:label>
+        <rdfs:label xml:lang="de">vorhergehende Fabula</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#previousSyuzhet -->
+
+    <owl:ObjectProperty rdf:about="http://onama.sbg.ac.at/ontology#previousSyuzhet">
+        <rdfs:subPropertyOf rdf:resource="http://onama.sbg.ac.at/ontology#previous"/>
+        <rdfs:domain rdf:resource="http://onama.sbg.ac.at/ontology#Realisation"/>
+        <rdfs:range rdf:resource="http://onama.sbg.ac.at/ontology#Realisation"/>
+        <dc:description xml:lang="de">Diese Kante verweist auf Realisierungsebene von einem Narrativ auf das vorhergehende Narrativ auf dem Syuzhet-Pfad.</dc:description>
+        <dc:description xml:lang="en">On the level of realisation, this property points from one narrative to the prevoious narrative on the syuzhet path.</dc:description>
+        <rdfs:label xml:lang="en">previous syuzhet</rdfs:label>
+        <rdfs:label xml:lang="de">vorhergehendes Syuzhet</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#realises -->
+
+    <owl:ObjectProperty rdf:about="http://onama.sbg.ac.at/ontology#realises">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://onama.sbg.ac.at/ontology#Realisation"/>
+        <rdfs:range rdf:resource="http://onama.sbg.ac.at/ontology#Concept"/>
+        <dc:description xml:lang="de">Diese Kante verbindet die Realisierung eines Narrativs mit dem Konzept dieses Narrativs.</dc:description>
+        <dc:description xml:lang="en">This property relates the realisation of a narrative with the concept of that narrative.</dc:description>
+        <rdfs:label xml:lang="en">realises</rdfs:label>
+        <rdfs:label xml:lang="de">realisiert</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#realisesAsSupplementaryNarrative -->
+
+    <owl:ObjectProperty rdf:about="http://onama.sbg.ac.at/ontology#realisesAsSupplementaryNarrative">
+        <rdfs:subPropertyOf rdf:resource="http://onama.sbg.ac.at/ontology#realises"/>
+        <rdfs:domain rdf:resource="http://onama.sbg.ac.at/ontology#Realisation"/>
+        <rdfs:range rdf:resource="http://onama.sbg.ac.at/ontology#Concept"/>
+        <dc:description xml:lang="de">Diese Kante verbindet Narrativ-Realisierungen, die eine &quot;Haupthandlung&quot; ergänzen, mit ihren jeweiligen Konzepten.</dc:description>
+        <dc:description xml:lang="en">This property relates narrative realisations that are supplementary to a &quot;main plot&quot; to their respective concepts.</dc:description>
+        <rdfs:label xml:lang="en">realises as supplementary narrative</rdfs:label>
+        <rdfs:label xml:lang="de">realisiert als ergänzendes Narrativ</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#sameAs -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#sameAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#depictedIn -->
+
+    <owl:DatatypeProperty rdf:about="http://onama.sbg.ac.at/ontology#depictedIn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://onama.sbg.ac.at/ontology#VisualRealisation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <dc:description xml:lang="de">Diese Kante verbindet eine visuelle Realisierung mit dem Bild-Objekt, auf dem diese dargestellt ist, z.B. in REALonline.</dc:description>
+        <dc:description xml:lang="en">This property relates a visual realisation to the image object on which it is displayed, e.g. in REALonline.</dc:description>
+        <rdfs:label xml:lang="de">abgebildet in</rdfs:label>
+        <rdfs:label xml:lang="en">depicted in</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#fromToken -->
+
+    <owl:DatatypeProperty rdf:about="http://onama.sbg.ac.at/ontology#fromToken">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://onama.sbg.ac.at/ontology#TextPassage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:description xml:lang="de">Diese Kante zeigt von einer Textpassage auf das erste Token aus dieser Gruppe.</dc:description>
+        <dc:description xml:lang="en">This property points from a Text Passage to the first token of this group.</dc:description>
+        <rdfs:label xml:lang="en">from token</rdfs:label>
+        <rdfs:label xml:lang="de">von Token</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#hasMhdbdbSigilURL -->
+
+    <owl:DatatypeProperty rdf:about="http://onama.sbg.ac.at/ontology#hasMhdbdbSigilURL">
+        <rdfs:subPropertyOf rdf:resource="http://onama.sbg.ac.at/ontology#hasUrl"/>
+        <rdfs:domain rdf:resource="http://onama.sbg.ac.at/ontology#Collection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <dc:description xml:lang="en">Reference to the URL of a MHDBDB sigil.</dc:description>
+        <dc:description xml:lang="de">Verweis auf eine die URL zu einer MHDBDB Sigle.</dc:description>
+        <rdfs:label xml:lang="en">has Mhdbdb Sigil URL</rdfs:label>
+        <rdfs:label xml:lang="de">hat URL auf MHDBDB Sigle</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#hasRoWorkURL -->
+
+    <owl:DatatypeProperty rdf:about="http://onama.sbg.ac.at/ontology#hasRoWorkURL">
+        <rdfs:subPropertyOf rdf:resource="http://onama.sbg.ac.at/ontology#hasUrl"/>
+        <rdfs:domain rdf:resource="http://onama.sbg.ac.at/ontology#VisualRealisation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <dc:description xml:lang="en">Reference to a realonline work url.</dc:description>
+        <dc:description xml:lang="de">Verweis auf eine Realonline-Werk-Url.</dc:description>
+        <rdfs:label xml:lang="en">has Realonline Work URL</rdfs:label>
+        <rdfs:label xml:lang="de">hat Realonline Werk URL</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#hasSceneNode -->
+
+    <owl:DatatypeProperty rdf:about="http://onama.sbg.ac.at/ontology#hasSceneNode">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://onama.sbg.ac.at/ontology#Action"/>
+        <rdfs:domain rdf:resource="http://onama.sbg.ac.at/ontology#SemanticRole"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <dc:description xml:lang="en">Reference to a node of a REALonline scene graph.</dc:description>
+        <dc:description xml:lang="de">Referenz auf einen Knoten eines REALonline-Szenegraphen.</dc:description>
+        <rdfs:label xml:lang="en">has REALonline scenary graph node</rdfs:label>
+        <rdfs:label xml:lang="en">has scenary graph node</rdfs:label>
+        <rdfs:label xml:lang="de">hat REALonline Szenengraphknoten</rdfs:label>
+        <rdfs:label xml:lang="de">hat Szenengraphknoten</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#hasSigil -->
+
+    <owl:DatatypeProperty rdf:about="http://onama.sbg.ac.at/ontology#hasSigil">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://onama.sbg.ac.at/ontology#Collection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:description xml:lang="de">Diese Kante verbindet eine Sammlung mit einer Sigle in der MHDBDB.</dc:description>
+        <dc:description xml:lang="en">This property relates a Collection to a sigil in the MHDBDB.</dc:description>
+        <rdfs:label xml:lang="en">has MHDBDB sigil</rdfs:label>
+        <rdfs:label xml:lang="en">has sigil</rdfs:label>
+        <rdfs:label xml:lang="de">hat MHDBDB Sigle</rdfs:label>
+        <rdfs:label xml:lang="de">hat Sigle</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#hasUrl -->
+
+    <owl:DatatypeProperty rdf:about="http://onama.sbg.ac.at/ontology#hasUrl">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <dc:description xml:lang="en">Reference to an URL.</dc:description>
+        <dc:description xml:lang="de">Verweis auf eine URL.</dc:description>
+        <rdfs:label xml:lang="en">has Url</rdfs:label>
+        <rdfs:label xml:lang="de">hat Url</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#toToken -->
+
+    <owl:DatatypeProperty rdf:about="http://onama.sbg.ac.at/ontology#toToken">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://onama.sbg.ac.at/ontology#TextPassage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:description xml:lang="de">Diese Kante zeigt von einer Textpassage auf das letzte Token aus dieser Gruppe.</dc:description>
+        <dc:description xml:lang="en">This property points from a Text Passage to the last token of this group.</dc:description>
+        <rdfs:label xml:lang="de">bis Token</rdfs:label>
+        <rdfs:label xml:lang="en">to token</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://erlangen-crm.org/current/E21_Person -->
+
+    <rdf:Description rdf:about="http://erlangen-crm.org/current/E21_Person">
+        <owl:equivalentClass rdf:resource="http://onama.sbg.ac.at/ontology#Person"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://erlangen-crm.org/current/E2_Temporal_Entity -->
+
+    <rdf:Description rdf:about="http://erlangen-crm.org/current/E2_Temporal_Entity">
+        <owl:equivalentClass rdf:resource="http://onama.sbg.ac.at/ontology#TemporalEntity"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://erlangen-crm.org/current/E39_Actor -->
+
+    <rdf:Description rdf:about="http://erlangen-crm.org/current/E39_Actor">
+        <owl:equivalentClass rdf:resource="http://onama.sbg.ac.at/ontology#Actor"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://erlangen-crm.org/current/E52_Time-Span -->
+
+    <rdf:Description rdf:about="http://erlangen-crm.org/current/E52_Time-Span">
+        <owl:equivalentClass rdf:resource="http://onama.sbg.ac.at/ontology#TimeSpan"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://erlangen-crm.org/current/E53_Place -->
+
+    <rdf:Description rdf:about="http://erlangen-crm.org/current/E53_Place">
+        <owl:equivalentClass rdf:resource="http://onama.sbg.ac.at/ontology#Place"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://erlangen-crm.org/current/E70_Thing -->
+
+    <rdf:Description rdf:about="http://erlangen-crm.org/current/E70_Thing">
+        <owl:equivalentClass rdf:resource="http://onama.sbg.ac.at/ontology#Thing"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://erlangen-crm.org/current/E74_Group -->
+
+    <rdf:Description rdf:about="http://erlangen-crm.org/current/E74_Group">
+        <owl:equivalentClass rdf:resource="http://onama.sbg.ac.at/ontology#Group"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://erlangen-crm.org/current/E77_Persistent_Item -->
+
+    <rdf:Description rdf:about="http://erlangen-crm.org/current/E77_Persistent_Item">
+        <owl:equivalentClass rdf:resource="http://onama.sbg.ac.at/ontology#PersistentItem"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#ActantRole -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#ActantRole">
+        <rdfs:subClassOf rdf:resource="http://onama.sbg.ac.at/ontology#SemanticRole"/>
+        <dc:description xml:lang="en">Actants are elements that perform or are subjected to an action.</dc:description>
+        <dc:description xml:lang="de">Aktanten sind Elemente, die eine Handlung ausführen oder von einer Handlung betroffen sind.</dc:description>
+        <rdfs:label xml:lang="en">Actant Role</rdfs:label>
+        <rdfs:label xml:lang="de">Rolle Aktant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#Action -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#Action">
+        <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E28_Conceptual_Object"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <dc:description xml:lang="en">Abstract concepts of actions from the class &quot;Verb&quot; are created as a separate node for each narrative, which belongs to the class &quot;Action&quot;.</dc:description>
+        <dc:description xml:lang="de">Abstrakte Handlungskonzepte aus der Klasse &quot;Verb&quot; werden für jedes Narrativ als eigener Knoten angelegt, welcher der Klasse &quot;Handlung&quot; angehört.</dc:description>
+        <rdfs:label xml:lang="en">Action</rdfs:label>
+        <rdfs:label xml:lang="de">Handlung</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#Actor -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#Actor">
+        <rdfs:subClassOf rdf:resource="http://onama.sbg.ac.at/ontology#PersistentItem"/>
+        <dc:description xml:lang="de">Bezeichnet Protagonisten, die in einem Narrativ aktiv werden.</dc:description>
+        <dc:description xml:lang="en">Denotes protagonists who become active in a narrative.</dc:description>
+        <rdfs:label xml:lang="en">Actor</rdfs:label>
+        <rdfs:label xml:lang="de">Akteur</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#AgentRole -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#AgentRole">
+        <rdfs:subClassOf rdf:resource="http://onama.sbg.ac.at/ontology#CauserRole"/>
+        <dc:description xml:lang="en">A prototypical agent is a living entity who acts on purpose and performs an action that has a physical, visible effect.</dc:description>
+        <dc:description xml:lang="de">Ein prototypisches Agens ist eine belebte Entität, die absichtlich handelt und deren Handlung einen physischen, sichtbaren Effekt hat.</dc:description>
+        <rdfs:label xml:lang="en">Agent Role</rdfs:label>
+        <rdfs:label xml:lang="de">Rolle Agens</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#Animal -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#Animal">
+        <rdfs:subClassOf rdf:resource="http://onama.sbg.ac.at/ontology#Actor"/>
+        <hasCidocSuperclass rdf:resource="http://www.cidoc-crm.org/html/5.0.4/cidoc-crm.html#E20"/>
+        <dc:description xml:lang="de">Bezeichnet ein Tier als Protagonisten, welches in einem Narrativ involviert ist.</dc:description>
+        <dc:description xml:lang="en">Refers to an animal as a protagonist that is involved in a narrative.</dc:description>
+        <rdfs:label xml:lang="en">Animal</rdfs:label>
+        <rdfs:label xml:lang="de">Tier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#BenefactiveRole -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#BenefactiveRole">
+        <rdfs:subClassOf rdf:resource="http://onama.sbg.ac.at/ontology#ParticipatorRole"/>
+        <dc:description xml:lang="en">Benefactive is the semantic role of a referent which is advantaged or disadvantaged by an event.</dc:description>
+        <dc:description xml:lang="de">Benefaktiv ist die semantische Rolle eines Referenten, der durch ein Ereignis begünstigt oder benachteiligt wird.</dc:description>
+        <rdfs:label xml:lang="en">Benefactive Role</rdfs:label>
+        <rdfs:label xml:lang="de">Rolle Benefaktiv</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#CauserRole -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#CauserRole">
+        <rdfs:subClassOf rdf:resource="http://onama.sbg.ac.at/ontology#ActantRole"/>
+        <dc:description xml:lang="en">Causer is the semantic role of a person or thing who is the doer or the instigator of an event.</dc:description>
+        <dc:description xml:lang="de">Verursacher/in ist die semantische Rolle einer Person oder Sache, die eine Handlung ausführt bzw. ein Ereignis auslöst.</dc:description>
+        <rdfs:label xml:lang="en">Causer Role</rdfs:label>
+        <rdfs:label xml:lang="de">Rolle Verursacher/in</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#Co-AgentRole -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#Co-AgentRole">
+        <rdfs:subClassOf rdf:resource="http://onama.sbg.ac.at/ontology#CauserRole"/>
+        <dc:description xml:lang="en">Co- or Re-Agent in verbs that describe actions that are in the relation of action and reaction to each other.</dc:description>
+        <dc:description xml:lang="de">Ko- oder Re-Agierender bei Verben, die Handlungen beschreiben, die in der Relation von Aktion und Reaktion zueinander stehen.</dc:description>
+        <rdfs:label xml:lang="en">Co-Agent Role</rdfs:label>
+        <rdfs:label xml:lang="de">Rolle Ko-Agens</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#Collection -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#Collection">
+        <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E28_Conceptual_Object"/>
+        <dc:description xml:lang="de">Benennt den textlichen oder bildlichen Kontext, aus welchem das Narrativ stammt.</dc:description>
+        <dc:description xml:lang="en">Identifies the textual or pictorial context from which the narrative originates.</dc:description>
+        <rdfs:label xml:lang="en">Collection</rdfs:label>
+        <rdfs:label xml:lang="de">Sammlung</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#Concept -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#Concept">
+        <rdfs:subClassOf rdf:resource="http://onama.sbg.ac.at/ontology#Narrative"/>
+        <owl:disjointWith rdf:resource="http://onama.sbg.ac.at/ontology#Realisation"/>
+        <dc:description xml:lang="en">Defines a specific narrative as an abstraction without a concrete reference to a realization.</dc:description>
+        <dc:description xml:lang="de">Definiert ein spezifisches Narrativ als Abstraktum ohne einen konkreten Rückbezug auf eine Realisierung.</dc:description>
+        <rdfs:label xml:lang="en">Concept</rdfs:label>
+        <rdfs:label xml:lang="de">Konzept</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#EntityFunction -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#EntityFunction">
+        <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E28_Conceptual_Object"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <dc:description xml:lang="de">Bezeichnet eine Funktion eines Akteurs oder  Dings in einem Narrativ (beispielsweise Held, Herrscher, Bösewicht, Trophäe, Talisman...).</dc:description>
+        <dc:description xml:lang="en">Denotes a function of an actor or thing in a narrative (for example hero, ruler, villain, trophy, talisman...).</dc:description>
+        <rdfs:label xml:lang="en">Entity Function</rdfs:label>
+        <rdfs:label xml:lang="de">Entitätsfunktion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#ExperiencerRole -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#ExperiencerRole">
+        <rdfs:subClassOf rdf:resource="http://onama.sbg.ac.at/ontology#ParticipatorRole"/>
+        <dc:description xml:lang="en">An Experiencer is an animate entity that experiences a sensory perception or mental state designated by the predicate.</dc:description>
+        <dc:description xml:lang="de">Ein/e Wahrnehmende/r ist eine belebte Entität, die eine vom Prädiktat bezeichnete Sinneswahrnehmung oder einen psychischen Zustand erlebt.</dc:description>
+        <rdfs:label xml:lang="en">Experiencer Role</rdfs:label>
+        <rdfs:label xml:lang="de">Rolle Wahrnehmende/r</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#GoalRole -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#GoalRole">
+        <rdfs:subClassOf rdf:resource="http://onama.sbg.ac.at/ontology#LocalisationRole"/>
+        <dc:description xml:lang="en">Goal – The location or entity in the direction of which something moves.</dc:description>
+        <dc:description xml:lang="de">Ziel - Der Ort oder die Entität, in deren Richtung sich etwas bewegt.</dc:description>
+        <rdfs:label xml:lang="en">Goal Role</rdfs:label>
+        <rdfs:label xml:lang="de">Rolle Ziel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#Group -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#Group">
+        <rdfs:subClassOf rdf:resource="http://onama.sbg.ac.at/ontology#Actor"/>
+        <hasCidocEquivalent rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E74_Group"/>
+        <dc:description xml:lang="de">Bezeichnet eine Gruppe von Individuen, die in einem Narrativ involviert sind.</dc:description>
+        <dc:description xml:lang="en">Denotes a group of individuals who are involved in a narrative.</dc:description>
+        <rdfs:label xml:lang="en">Group</rdfs:label>
+        <rdfs:label xml:lang="de">Menschliche Gruppe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#InstrumentRole -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#InstrumentRole">
+        <rdfs:subClassOf rdf:resource="http://onama.sbg.ac.at/ontology#SemanticRole"/>
+        <dc:description xml:lang="de">Instrument - Das Mittel, mit dem die durch das Prädikat bezeichnete Handlung oder das Ereignis ausgeführt wird.</dc:description>
+        <dc:description xml:lang="en">Instrument – The medium by which the action or event denoted by the predicate is carried out.</dc:description>
+        <rdfs:label xml:lang="en">Instrument Role</rdfs:label>
+        <rdfs:label xml:lang="de">Rolle Instrument</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#LocalisationRole -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#LocalisationRole">
+        <rdfs:subClassOf rdf:resource="http://onama.sbg.ac.at/ontology#SemanticRole"/>
+        <dc:description xml:lang="en">Local Averbial; Adverbial of Place.</dc:description>
+        <dc:description xml:lang="de">Lokaladverbiale; Adverbiale des Raumes.</dc:description>
+        <rdfs:label xml:lang="en">Localisation Role</rdfs:label>
+        <rdfs:label xml:lang="de">Rolle Lokalisierung</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#ModeRole -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#ModeRole">
+        <rdfs:subClassOf rdf:resource="http://onama.sbg.ac.at/ontology#SemanticRole"/>
+        <dc:description xml:lang="en">&quot;Adverbial of manner – procedure (how?); degree, measure, intensity (how much?); material quality (from what?)</dc:description>
+        <dc:description xml:lang="de">Adverbiale der Art und Weise – Vorgehensweise (wie?); Grad, Maß, Intensität (wieviel, wie sehr...?); stoffliche Beschaffenheit (woraus?)</dc:description>
+        <rdfs:label xml:lang="en">Mode Role</rdfs:label>
+        <rdfs:label xml:lang="de">Rolle Modus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#MythicalBeing -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#MythicalBeing">
+        <rdfs:subClassOf rdf:resource="http://onama.sbg.ac.at/ontology#Actor"/>
+        <hasCidocSuperclass rdf:resource="http://www.cidoc-crm.org/html/5.0.4/cidoc-crm.html#E28"/>
+        <dc:description xml:lang="de">Bezeichnet ein mythisches Wesen, eine Gottheit oder ein Fabelwesen, welches in einem Narrativ involviert ist.</dc:description>
+        <dc:description xml:lang="en">Denotes a mythical being or a deity that is involved in a narrative.</dc:description>
+        <rdfs:label xml:lang="en">MythicalBeing</rdfs:label>
+        <rdfs:label xml:lang="de">Mythisches Wesen; Gottheit; Fabelwesen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#Narrative -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#Narrative">
+        <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E28_Conceptual_Object"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <owl:disjointWith rdf:resource="http://onama.sbg.ac.at/ontology#SemanticRole"/>
+        <hasCidocSuperclass rdf:resource="http://www.cidoc-crm.org/html/5.0.4/cidoc-crm.html#E5"/>
+        <dc:description xml:lang="de">Bezeichnet eine Handlung, eine Zustandsänderung.</dc:description>
+        <dc:description xml:lang="en">Denotes an action, a change of state.</dc:description>
+        <rdfs:label xml:lang="de">Narrativ</rdfs:label>
+        <rdfs:label xml:lang="en">Narrative</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#ParticipatorRole -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#ParticipatorRole">
+        <rdfs:subClassOf rdf:resource="http://onama.sbg.ac.at/ontology#ActantRole"/>
+        <dc:description xml:lang="de">Die Klasse umfasst typischerweise belebte Entitäten, die am Geschehen teilhaben, aber keine Kontrolle oder Initiative im Zusammenhang damit aufweisen.</dc:description>
+        <dc:description xml:lang="en">The class includes typicallly animate entities which participate in the event but have no control or initiative associated it.</dc:description>
+        <rdfs:label xml:lang="en">Participator Role</rdfs:label>
+        <rdfs:label xml:lang="de">Rolle Teilnehmende/r</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#PatientRole -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#PatientRole">
+        <rdfs:subClassOf rdf:resource="http://onama.sbg.ac.at/ontology#UndergoerRole"/>
+        <dc:description xml:lang="de">Patiens - Die von einem Geschehen betroffene lebende Entität, die keine Kontrolle auf den Vorgang ausübt; die betroffene Sache oder der betroffene Sachverhalt.</dc:description>
+        <dc:description xml:lang="en">Patient - The living entity affected by an event or action and not exercising control over the event; the object or matter affected.</dc:description>
+        <rdfs:label xml:lang="en">Patient Role</rdfs:label>
+        <rdfs:label xml:lang="de">Rolle Patiens</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#PersistentItem -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#PersistentItem">
+        <owl:disjointWith rdf:resource="http://onama.sbg.ac.at/ontology#Place"/>
+        <owl:disjointWith rdf:resource="http://onama.sbg.ac.at/ontology#SemanticRole"/>
+        <owl:disjointWith rdf:resource="http://onama.sbg.ac.at/ontology#TimeSpan"/>
+        <hasCidocEquivalent rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E77_Persistent_Item"/>
+        <dc:description xml:lang="de">Diese Klasse umfasst Lebewesen, Gegenstände und geistige Erzeugnisse, die eine dauerhafte Identität haben.</dc:description>
+        <dc:description xml:lang="en">This class includes living beings, objects and intellectual products which have a permanent identity.</dc:description>
+        <rdfs:label xml:lang="en">Persistent Item</rdfs:label>
+        <rdfs:label xml:lang="de">Persistentes Objekt (Seiendes)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#Person -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#Person">
+        <rdfs:subClassOf rdf:resource="http://onama.sbg.ac.at/ontology#Actor"/>
+        <hasCidocEquivalent rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E21_Person"/>
+        <dc:description xml:lang="de">Bezeichnet eine Person, welche in einem Narrativ involviert ist.</dc:description>
+        <dc:description xml:lang="en">Denotes a person who is involved in a narrative.</dc:description>
+        <rdfs:label xml:lang="de">Person</rdfs:label>
+        <rdfs:label xml:lang="en">Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#Place -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#Place">
+        <owl:disjointWith rdf:resource="http://onama.sbg.ac.at/ontology#TimeSpan"/>
+        <hasCidocEquivalent rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E53_Place"/>
+        <dc:description xml:lang="de">Bezeichnet Ausdehnungen im Raum, die in der Regel unbeweglich sind (beispielsweise Burg, Garten, Tal...).</dc:description>
+        <dc:description xml:lang="en">Describes extensions in space that are usually immobile (for example castle, garden, valley...).</dc:description>
+        <rdfs:label xml:lang="de">Ort</rdfs:label>
+        <rdfs:label xml:lang="en">Place</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#PlaceRole -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#PlaceRole">
+        <rdfs:subClassOf rdf:resource="http://onama.sbg.ac.at/ontology#LocalisationRole"/>
+        <dc:description xml:lang="en">Locative – The specification of the place where the action or event denoted by the predicate is situated.</dc:description>
+        <dc:description xml:lang="de">Lokativ – Die Angabe des Ortes, an dem die durch das Prädikat bezeichnete Handlung oder das Ereignis stattfindet.</dc:description>
+        <rdfs:label xml:lang="en">Place Role</rdfs:label>
+        <rdfs:label xml:lang="de">Rolle Ort</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#PossessorRole -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#PossessorRole">
+        <rdfs:subClassOf rdf:resource="http://onama.sbg.ac.at/ontology#ParticipatorRole"/>
+        <dc:description xml:lang="de">Besitzer/in ist die semantische Rolle einer Entität, die etwas besitzt.</dc:description>
+        <dc:description xml:lang="en">Possessor is the semantic role of an entity that possesses something.</dc:description>
+        <rdfs:label xml:lang="en">Possessor Role</rdfs:label>
+        <rdfs:label xml:lang="de">Rolle Besitzer/in</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#PredicativeRole -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#PredicativeRole">
+        <rdfs:subClassOf rdf:resource="http://onama.sbg.ac.at/ontology#SemanticRole"/>
+        <dc:description xml:lang="en">E.g. &quot;The princes elect Frederick as king.&quot; – &quot;as king&quot;: predicative.</dc:description>
+        <dc:description xml:lang="de">Z.B. &quot;Die Fürsten wählen Friedrich zum König.&quot; – &quot;zum König&quot;: Prädikativ.</dc:description>
+        <rdfs:label xml:lang="en">Predicative Role</rdfs:label>
+        <rdfs:label xml:lang="de">Rolle Prädikativ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#Realisation -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#Realisation">
+        <rdfs:subClassOf rdf:resource="http://onama.sbg.ac.at/ontology#Narrative"/>
+        <dc:description xml:lang="de">Bezeichnet die konkrete Umsetzung eines Narrativ-Konzepts in einem spezifischen Medium, etwa einem Text oder einem Bild.</dc:description>
+        <dc:description xml:lang="en">Denotes the concrete implementation of a narrative concept in a specific medium, such as a text or an image.</dc:description>
+        <rdfs:label xml:lang="en">Realisation</rdfs:label>
+        <rdfs:label xml:lang="de">Realisierung</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#RecipientRole -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#RecipientRole">
+        <rdfs:subClassOf rdf:resource="http://onama.sbg.ac.at/ontology#ParticipatorRole"/>
+        <dc:description xml:lang="de">Der Empfänger einer Entität oder Information bei Verben, die den Transfer eines Besitzgegenstandes oder einer Information bezeichnen.</dc:description>
+        <dc:description xml:lang="en">The recipient of an entity or information in verbs that denote the transfer of an object of possession or information.</dc:description>
+        <rdfs:label xml:lang="en">Recipient Role</rdfs:label>
+        <rdfs:label xml:lang="de">Rolle Rezipient/in</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#SemanticRole -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#SemanticRole">
+        <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E28_Conceptual_Object"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <dc:description xml:lang="en">Contains the information of a semantic role associated with the narrative.</dc:description>
+        <dc:description xml:lang="de">Enthält die Informationen einer mit dem Narrativ verbundenen semantischen Rolle.</dc:description>
+        <rdfs:label xml:lang="en">Semantic Role</rdfs:label>
+        <rdfs:label xml:lang="de">Semantische Rolle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#SourceRole -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#SourceRole">
+        <rdfs:subClassOf rdf:resource="http://onama.sbg.ac.at/ontology#LocalisationRole"/>
+        <dc:description xml:lang="de">Quelle - Der Ort oder die Entität, von der aus sich etwas bewegt.</dc:description>
+        <dc:description xml:lang="en">Source – The location or entity from which something moves.</dc:description>
+        <rdfs:label xml:lang="de">Rolle Quelle</rdfs:label>
+        <rdfs:label xml:lang="en">Source Role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#StimulusRole -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#StimulusRole">
+        <rdfs:subClassOf rdf:resource="http://onama.sbg.ac.at/ontology#CauserRole"/>
+        <dc:description xml:lang="de">Der oftmals unbelebte Auslöser der vom Prädikat bezeichneten Situation; in Kombination mit der Rolle Experiencer (Wahrnehmende/r): der Gegenstand eines psychischen Zustands.</dc:description>
+        <dc:description xml:lang="en">The often inanimate trigger of the situation described by the verbal predicate; in combination with the Experiencer Role: the object of a mental state.</dc:description>
+        <rdfs:label xml:lang="de">Rolle Stimulus</rdfs:label>
+        <rdfs:label xml:lang="en">Stimulus Role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#TemporalEntity -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#TemporalEntity">
+        <hasCidocEquivalent rdf:resource="http://www.cidoc-crm.org/sites/default/files/Documents/cidoc_crm_version_5.0.4.html#E2"/>
+        <dc:description xml:lang="de">Diese  Klasse  umfasst  Phasen, Ereignisse  und  andere  zeitlich  begrenzte Zustände; sie ist disjunkt von der Klasse &quot;Persistentes Objekt (Seiendes)&quot;.</dc:description>
+        <dc:description xml:lang="en">This class comprises all phenomena, such as periods, events and states, which happen over a limited extent in time; it is disjoint from Persistent Item.</dc:description>
+        <rdfs:label xml:lang="en">Temporal Entity</rdfs:label>
+        <rdfs:label xml:lang="de">Zeitliche Entität (Geschehendes)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#TemporalityRole -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#TemporalityRole">
+        <rdfs:subClassOf rdf:resource="http://onama.sbg.ac.at/ontology#SemanticRole"/>
+        <dc:description xml:lang="de">Gibt den Zeitraum oder Zeitpunkt eines Geschehens an.</dc:description>
+        <dc:description xml:lang="en">Indicates the period or time of an event.</dc:description>
+        <rdfs:label xml:lang="de">Rolle Zeitlichkeit</rdfs:label>
+        <rdfs:label xml:lang="en">Temporality Role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#TextPassage -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#TextPassage">
+        <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E54_Dimension"/>
+        <hasCidocSuperclass rdf:resource="http://www.cidoc-crm.org/html/5.0.4/cidoc-crm.html#E33"/>
+        <dc:description xml:lang="de">Bezeichnet einen Ausschnitt aus einem Text; beispielsweise in der Mittelhochdeutschen Begriffsdatenbank (MHDBDB).</dc:description>
+        <dc:description xml:lang="en">Denotes a section from a text; for instance in the Mittelhochdeutsche Begriffsdatenbank (MHDBDB).</dc:description>
+        <rdfs:label xml:lang="en">Text Passage</rdfs:label>
+        <rdfs:label xml:lang="de">Textpassage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#TextualRealisation -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#TextualRealisation">
+        <rdfs:subClassOf rdf:resource="http://onama.sbg.ac.at/ontology#Realisation"/>
+        <owl:disjointWith rdf:resource="http://onama.sbg.ac.at/ontology#VisualRealisation"/>
+        <dc:description xml:lang="de">Bezeichnet die konkrete Umsetzung eines Konzepts in einem Text.</dc:description>
+        <dc:description xml:lang="en">Denotes the concrete implementation of a concept in a text.</dc:description>
+        <rdfs:label xml:lang="en">Textual Realisation</rdfs:label>
+        <rdfs:label xml:lang="de">Textuelle Realisierung</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#ThemeRole -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#ThemeRole">
+        <rdfs:subClassOf rdf:resource="http://onama.sbg.ac.at/ontology#UndergoerRole"/>
+        <dc:description xml:lang="de">Thema – Die Entität, die durch das im Prädikat bezeichnete Geschehen (bzw. den bezeichneten Zustand) räumlich bewegt oder räumlich eingeordnet wird.</dc:description>
+        <dc:description xml:lang="en">Theme – The entity that is spatially moved or whose spatial position is indicated by the event (or state) designated in the predicate.</dc:description>
+        <rdfs:label xml:lang="de">Rolle Thema</rdfs:label>
+        <rdfs:label xml:lang="en">Theme Role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#Thing -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#Thing">
+        <rdfs:subClassOf rdf:resource="http://onama.sbg.ac.at/ontology#PersistentItem"/>
+        <hasCidocEquivalent rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E70_Thing"/>
+        <dc:description xml:lang="en">Comprises intellectual products or physical things.</dc:description>
+        <dc:description xml:lang="de">Umfasst intellektuelle Produkte oder physische Dinge.</dc:description>
+        <rdfs:label xml:lang="de">Ding</rdfs:label>
+        <rdfs:label xml:lang="en">Thing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#TimeSpan -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#TimeSpan">
+        <hasCidocEquivalent rdf:resource="http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span"/>
+        <dc:description xml:lang="de">Diese Klasse umfasst abstrakte zeitliche Umfänge, die einen Anfang, ein Ende und eine Dauer haben.</dc:description>
+        <dc:description xml:lang="en">This class comprises abstract temporal extents having a beginning, an end and a duration.</dc:description>
+        <rdfs:label xml:lang="en">Time Span</rdfs:label>
+        <rdfs:label xml:lang="de">Zeitspanne</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#UndergoerRole -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#UndergoerRole">
+        <rdfs:subClassOf rdf:resource="http://onama.sbg.ac.at/ontology#ActantRole"/>
+        <dc:description xml:lang="de">Die von der im Prädikat benannten Handlung &quot;betroffene&quot; Entität.</dc:description>
+        <dc:description xml:lang="en">The &quot;undergoer&quot; of the action or event denoted by the predicate.</dc:description>
+        <rdfs:label xml:lang="de">Rolle Betroffene/r</rdfs:label>
+        <rdfs:label xml:lang="en">Undergoer Role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#Verb -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#Verb">
+        <rdfs:subClassOf rdf:resource="http://erlangen-crm.org/current/E28_Conceptual_Object"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <dc:description xml:lang="de">Die Klasse &quot;Verb&quot; umfasst Handlungen, die die Zuweisung semantischer Rollen ermöglichen.</dc:description>
+        <dc:description xml:lang="en">The class &quot;verb&quot; includes actions that allow the assignment of semantic roles.</dc:description>
+        <rdfs:label xml:lang="de">Verb</rdfs:label>
+        <rdfs:label xml:lang="en">Verb</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#VisualRealisation -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#VisualRealisation">
+        <rdfs:subClassOf rdf:resource="http://onama.sbg.ac.at/ontology#Realisation"/>
+        <dc:description xml:lang="de">Bezeichnet die konkrete Umsetzung eines Konzepts in einem Bild.</dc:description>
+        <dc:description xml:lang="en">Refers to the concrete implementation of a concept in an image.</dc:description>
+        <rdfs:label xml:lang="en">Visual Realisation</rdfs:label>
+        <rdfs:label xml:lang="de">Visuelle Realisierung</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://onama.sbg.ac.at/ontology#WitnessRole -->
+
+    <owl:Class rdf:about="http://onama.sbg.ac.at/ontology#WitnessRole">
+        <rdfs:subClassOf rdf:resource="http://onama.sbg.ac.at/ontology#ParticipatorRole"/>
+        <dc:description xml:lang="en">Witness – The animate entity that witnesses the action or event denoted by the predicate.</dc:description>
+        <dc:description xml:lang="de">Zeuge/Zeugin – Die belebte Entität, die Zeuge der Handlung oder des Ereignisses ist, das durch das Prädikat bezeichnet wird.</dc:description>
+        <rdfs:label xml:lang="de">Rolle Zeuge/Zeugin</rdfs:label>
+        <rdfs:label xml:lang="en">Witness Role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://onama.sbg.ac.at/ontology#hasRelatedIconClassEntry">
+        <rdfs:label xml:lang="en">has related IconClass entry</rdfs:label>
+        <dc:description xml:lang="en">The property onama:hasRelatedIconClassEntry is used to refer to a similar IconClass entry.</dc:description>
+        <rdfs:label xml:lang="de">hat verwandten IconClass Eintrag</rdfs:label>
+        <dc:description xml:lang="de">Die Eigenschaft onama:hasRelatedIconClassEntry wird verwendet, um auf einen ähnlichen IconClass-Eintrag zu verweisen.</dc:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://onama.sbg.ac.at/ontology#hasRelatedWikiDataEntry">
+        <dc:description xml:lang="de">Die Eigenschaft hasRelatedWikiDataEntry wird verwendet, um auf einen ähnlichen WikiData-Eintrag zu verweisen.</dc:description>
+        <dc:description xml:lang="en">The property hasRelatedWikiDataEntry is used to refer to a similar WikiData entry.</dc:description>
+        <rdfs:label xml:lang="de">hat verwandten WikiData Eintrag</rdfs:label>
+        <rdfs:label xml:lang="en">has related WikiData entry</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch">
+        <dc:description xml:lang="en">The property skos:closeMatch is used to link two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications.
+(https://www.w3.org/TR/2009/REC-skos-reference-20090818/#mapping)</dc:description>
+        <rdfs:label xml:lang="de">Entsprechung mit großer Ähnlichkeit</rdfs:label>
+        <dc:description xml:lang="de">Die Eigenschaft skos:closeMatch wird verwendet, um zwei Konzepte zu verknüpfen, die sich so ähnlich sind, dass sie in einigen Anwendungen zur Informationsbeschaffung austauschbar verwendet werden können.
+(https://www.w3.org/TR/2009/REC-skos-reference-20090818/#mapping)</dc:description>
+        <rdfs:label xml:lang="en">close match</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://onama.sbg.ac.at/ontology#PersistentItem"/>
+            <rdf:Description rdf:about="http://onama.sbg.ac.at/ontology#Place"/>
+            <rdf:Description rdf:about="http://onama.sbg.ac.at/ontology#TemporalEntity"/>
+            <rdf:Description rdf:about="http://onama.sbg.ac.at/ontology#TimeSpan"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
